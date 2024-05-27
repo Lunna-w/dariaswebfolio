@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap");
+
+:root {
+  --blue: rgb(114, 187, 219);
+  --white: rgb(248, 249, 250);
+  --black: rgb(33, 37, 41);
+  --grey: rgb(70, 81, 92);
+  --yellow: rgb(255, 224, 102);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-image: url(3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: auto;
+}
+
+.landing-page {
+  position: relative;
+}
+
+.landing-page .header-area {
+  display: flex;
+  padding: 25px 0 0;
+  position: relative;
+}
+
+.landing-page .header-area .logo {
+  text-transform: uppercase;
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 19px;
+  width: 300px;
+  color: var(--white);
+}
+
+.landing-page .header-area .links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: right;
+}
+
+.landing-page .header-area .links li {
+  display: inline-block;
+  margin-left: 30px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.landing-page .header-area .links li:last-child {
+  border: 0;
+
+  padding: 10px 18px;
+  color: var(--black);
+  background-color: var(--white);
+  transform: scale(1.07, 1.05) skewX(-15deg);
+}
+.landing-page .header-area .links li:last-child:hover {
+  color: var(--blue);
+  background-color: var(--grey);
+  transition: all 0.5s ease;
+}
+
+.landing-page .info {
+  width: 55%;
+  margin-top: 130px;
+}
+
+.landing-page .info h1 {
+  font-size: 84px;
+  margin: 0 0 20px;
+  line-height: 1.4;
+  color: var(--white);
+}
+.landing-page .info h1 strong {
+  font-family: "Nova Flat", cursive;
+  background-image: linear-gradient(
+    90deg,
+    rgba(114, 187, 219, 1) 0%,
+    rgba(119, 93, 76, 0) 100%
+  );
+  display: block;
+  transform: scale(1.07, 1.05) skewX(-15deg);
+}
+
+.landing-page .info h1 strong:hover {
+  font-family: "Nova Flat", cursive;
+  background-image: linear-gradient(
+    90deg,
+    rgb(219, 203, 114) 0%,
+    rgba(119, 93, 76, 0) 100%
+  );
+  display: block;
+  transform: scale(1.07, 1.05) skewX(-15deg);
+  cursor: pointer;
+}
+.landing-page .info p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 15px;
+  color: var(--white);
+}
+
+.landing-page .info button {
+  font-family: "Karla", sans-serif;
+  border: 0;
+  transform: scale(1.07, 1.05) skewX(-15deg);
+  padding: 12px 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  color: var(--blue);
+  background-color: var(--white);
+  width: 300px;
+}
+
+.landing-page .info button:hover {
+  color: var(--blue);
+  background-color: var(--grey);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.icon {
+  width: 40px;
+  height: auto;
+}
+
+.icon:hover {
+  filter: brightness(20%);
+  filter: sepia(150%);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}

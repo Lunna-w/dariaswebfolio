@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="play.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Music</title>
+  </head>
+  <body>
+    <div class="container">
+      <input type="radio" name="slider" id="item-1" checked />
+      <input type="radio" name="slider" id="item-2" />
+      <input type="radio" name="slider" id="item-3" />
+      <div class="cards">
+        <label class="card" for="item-1" id="song-1">
+          <img src="am.jpg" alt="song" />
+        </label>
+        <label class="card" for="item-2" id="song-2">
+          <img src="sw.jpg" alt="song" />
+        </label>
+        <label class="card" for="item-3" id="song-3">
+          <img src="ph.png" alt="song" />
+        </label>
+      </div>
+      <div class="player">
+        <div class="upper-part">
+          <div class="play-icon">
+            <svg
+              width="20"
+              height="20"
+              fill="#343a40"
+              stroke="#343a40"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="feather feather-play"
+              viewBox="0 0 24 24"
+            >
+              <defs />
+              <path d="M5 3l14 9-14 9V3z" />
+            </svg>
+          </div>
+          <div class="info-area" id="test">
+            <label class="song-info" id="song-info-1">
+              <div class="title">Arabella</div>
+              <div class="sub-line">
+                <div class="subtitle">Arctic Monkeys</div>
+                <div class="time">3:27</div>
+              </div>
+            </label>
+            <label class="song-info" id="song-info-2">
+              <div class="title">Sweater Weather</div>
+              <div class="sub-line">
+                <div class="subtitle">The Neighbourhood</div>
+                <div class="time">4:00</div>
+              </div>
+            </label>
+            <label class="song-info" id="song-info-3">
+              <div class="title">Royals</div>
+              <div class="sub-line">
+                <div class="subtitle">Lorde</div>
+                <div class="time">3:10</div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="progress-bar">
+          <span class="progress"></span>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
